@@ -23,6 +23,7 @@ class ItemTableViewCell: UITableViewCell {
     // MARK: - Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
+        setUI()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -37,6 +38,11 @@ class ItemTableViewCell: UITableViewCell {
         infoLabel.text = appData.info
         priceLabel.text = appData.price
         countLikeLabel.text = "\(like)"
-
+    }
+    
+    func setUI() {
+        itemImageView.layer.cornerRadius = 5
     }
 }
+
+
