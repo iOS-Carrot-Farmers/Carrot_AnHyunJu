@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F26CB8712732CCA7002482DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26CB8702732CCA7002482DE /* AppDelegate.swift */; };
 		F26CB8732732CCA7002482DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26CB8722732CCA7002482DE /* SceneDelegate.swift */; };
-		F26CB8752732CCA7002482DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26CB8742732CCA7002482DE /* ViewController.swift */; };
 		F26CB8782732CCA7002482DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26CB8762732CCA7002482DE /* Main.storyboard */; };
 		F26CB87A2732CCA8002482DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26CB8792732CCA8002482DE /* Assets.xcassets */; };
 		F26CB87D2732CCA8002482DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26CB87B2732CCA8002482DE /* LaunchScreen.storyboard */; };
@@ -28,7 +27,6 @@
 		F26CB86D2732CCA7002482DE /* Carrot_Market_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carrot_Market_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26CB8702732CCA7002482DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F26CB8722732CCA7002482DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F26CB8742732CCA7002482DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F26CB8772732CCA7002482DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F26CB8792732CCA8002482DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F26CB87C2732CCA8002482DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -132,7 +130,10 @@
 			isa = PBXGroup;
 			children = (
 				F2A139A2273785B900B31C9D /* Home */,
-				F26CB8742732CCA7002482DE /* ViewController.swift */,
+				F2C858882737F70C00DCA361 /* Town */,
+				F2C858892737F71D00DCA361 /* MyAround */,
+				F2C8588A2737F73100DCA361 /* Chat */,
+				F2C8588B2737F73900DCA361 /* Profile */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -142,12 +143,40 @@
 			children = (
 				F26D86CB2737C49300232770 /* HomeTBC.swift */,
 				F26D86CD2737C4B500232770 /* HomeVC.swift */,
-				F26D86D72737C7A600232770 /* TownVC.swift */,
-				F26D86D92737C7BA00232770 /* MyAroundVC.swift */,
-				F26D86D32737C56000232770 /* ChatVC.swift */,
-				F26D86D52737C57500232770 /* ProfileVC.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		F2C858882737F70C00DCA361 /* Town */ = {
+			isa = PBXGroup;
+			children = (
+				F26D86D72737C7A600232770 /* TownVC.swift */,
+			);
+			path = Town;
+			sourceTree = "<group>";
+		};
+		F2C858892737F71D00DCA361 /* MyAround */ = {
+			isa = PBXGroup;
+			children = (
+				F26D86D92737C7BA00232770 /* MyAroundVC.swift */,
+			);
+			path = MyAround;
+			sourceTree = "<group>";
+		};
+		F2C8588A2737F73100DCA361 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				F26D86D32737C56000232770 /* ChatVC.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		F2C8588B2737F73900DCA361 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F26D86D52737C57500232770 /* ProfileVC.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,7 +256,6 @@
 				F26D86DA2737C7BA00232770 /* MyAroundVC.swift in Sources */,
 				F26D86D82737C7A600232770 /* TownVC.swift in Sources */,
 				F26D86D42737C56000232770 /* ChatVC.swift in Sources */,
-				F26CB8752732CCA7002482DE /* ViewController.swift in Sources */,
 				F26D86CE2737C4B500232770 /* HomeVC.swift in Sources */,
 				F26CB8712732CCA7002482DE /* AppDelegate.swift in Sources */,
 				F26D86CC2737C49300232770 /* HomeTBC.swift in Sources */,

@@ -105,6 +105,33 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Aw-Ue-dL6">
                                 <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VlZ-sU-hq8">
+                                        <rect key="frame" x="5" y="7" width="92.333333333333329" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="locationIcon">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="상일동 ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="18" name="SFProDisplay-Semibold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" image="locationIcon" imagePlacement="trailing">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="상일동">
+                                                    <attributes>
+                                                        <font key="NSFont" size="18" name="AppleSDGothicNeo-SemiBold"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content=" ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="18" name="SFProDisplay-Semibold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrU-Hw-FOH">
                                         <rect key="frame" x="258" y="7" width="30" height="30"/>
                                         <constraints>
@@ -135,39 +162,21 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="alarmIcon"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VlZ-sU-hq8">
-                                        <rect key="frame" x="5" y="7" width="92.333333333333329" height="30"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="locationIcon">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="상일동 ">
-                                                    <attributes>
-                                                        <font key="NSFont" size="18" name="SFProDisplay-Semibold"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </state>
-                                        <buttonConfiguration key="configuration" style="plain" image="locationIcon" imagePlacement="trailing">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="상일동">
-                                                    <attributes>
-                                                        <font key="NSFont" size="18" name="AppleSDGothicNeo-SemiBold"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content=" ">
-                                                    <attributes>
-                                                        <font key="NSFont" size="18" name="SFProDisplay-Semibold"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </buttonConfiguration>
-                                    </button>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sh7-mb-Gvw">
+                                        <rect key="frame" x="0.0" y="43" width="375" height="1"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="GLd-rD-OUE"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="pJb-A2-dyu" firstAttribute="leading" secondItem="PrU-Hw-FOH" secondAttribute="trailing" constant="5" id="Fye-VN-Esl"/>
+                                    <constraint firstAttribute="bottom" secondItem="sh7-mb-Gvw" secondAttribute="bottom" id="GVk-VP-YVF"/>
                                     <constraint firstItem="2mg-bd-lH7" firstAttribute="leading" secondItem="pJb-A2-dyu" secondAttribute="trailing" constant="5" id="Ldw-16-2DT"/>
                                     <constraint firstAttribute="bottom" secondItem="VlZ-sU-hq8" secondAttribute="bottom" constant="7" id="Q27-MP-hIG"/>
+                                    <constraint firstItem="sh7-mb-Gvw" firstAttribute="top" secondItem="0Aw-Ue-dL6" secondAttribute="top" constant="43" id="Wa9-rY-nWd"/>
                                     <constraint firstAttribute="bottom" secondItem="PrU-Hw-FOH" secondAttribute="bottom" constant="7" id="enl-R4-zlA"/>
                                     <constraint firstItem="pJb-A2-dyu" firstAttribute="top" secondItem="0Aw-Ue-dL6" secondAttribute="top" constant="7" id="gPO-uY-E5v"/>
                                     <constraint firstAttribute="bottom" secondItem="2mg-bd-lH7" secondAttribute="bottom" constant="7" id="hgA-C8-dWo"/>
@@ -175,6 +184,7 @@
                                     <constraint firstItem="VlZ-sU-hq8" firstAttribute="leading" secondItem="0Aw-Ue-dL6" secondAttribute="leading" constant="5" id="lYB-9f-xjY"/>
                                     <constraint firstItem="2mg-bd-lH7" firstAttribute="top" secondItem="0Aw-Ue-dL6" secondAttribute="top" constant="7" id="nGA-4y-Ils"/>
                                     <constraint firstItem="PrU-Hw-FOH" firstAttribute="top" secondItem="0Aw-Ue-dL6" secondAttribute="top" constant="7" id="pzs-e4-RfM"/>
+                                    <constraint firstAttribute="bottom" secondItem="sh7-mb-Gvw" secondAttribute="bottom" id="t2i-wV-OWl"/>
                                     <constraint firstAttribute="trailing" secondItem="2mg-bd-lH7" secondAttribute="trailing" constant="17" id="tmo-rG-mgt"/>
                                     <constraint firstAttribute="bottom" secondItem="pJb-A2-dyu" secondAttribute="bottom" constant="7" id="xbJ-Kj-mCk"/>
                                 </constraints>
@@ -189,6 +199,12 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="Ocp-jm-Y56"/>
+                    <connections>
+                        <outlet property="categoryBtn" destination="pJb-A2-dyu" id="PMv-nD-crC"/>
+                        <outlet property="locationBtn" destination="PrU-Hw-FOH" id="7iI-zG-U4P"/>
+                        <outlet property="noticeBtn" destination="2mg-bd-lH7" id="52h-Xx-jtV"/>
+                        <outlet property="searchBtn" destination="PrU-Hw-FOH" id="a3L-im-5AU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58H-sJ-md1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -203,9 +219,6 @@
         <image name="searchIcon" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
