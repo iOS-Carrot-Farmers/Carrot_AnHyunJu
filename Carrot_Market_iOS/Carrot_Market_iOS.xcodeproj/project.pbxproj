@@ -13,6 +13,12 @@
 		F26CB8782732CCA7002482DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26CB8762732CCA7002482DE /* Main.storyboard */; };
 		F26CB87A2732CCA8002482DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26CB8792732CCA8002482DE /* Assets.xcassets */; };
 		F26CB87D2732CCA8002482DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26CB87B2732CCA8002482DE /* LaunchScreen.storyboard */; };
+		F26D86CC2737C49300232770 /* HomeTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D86CB2737C49300232770 /* HomeTBC.swift */; };
+		F26D86CE2737C4B500232770 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D86CD2737C4B500232770 /* HomeVC.swift */; };
+		F26D86D42737C56000232770 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D86D32737C56000232770 /* ChatVC.swift */; };
+		F26D86D62737C57500232770 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D86D52737C57500232770 /* ProfileVC.swift */; };
+		F26D86D82737C7A600232770 /* TownVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D86D72737C7A600232770 /* TownVC.swift */; };
+		F26D86DA2737C7BA00232770 /* MyAroundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D86D92737C7BA00232770 /* MyAroundVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +29,13 @@
 		F26CB8772732CCA7002482DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F26CB8792732CCA8002482DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F26CB87C2732CCA8002482DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F26CB87E2732CCA8002482DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F26CB87E2732CCA8002482DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Carrot_Market_iOS/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
+		F26D86CB2737C49300232770 /* HomeTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTBC.swift; sourceTree = "<group>"; };
+		F26D86CD2737C4B500232770 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		F26D86D32737C56000232770 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		F26D86D52737C57500232770 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		F26D86D72737C7A600232770 /* TownVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownVC.swift; sourceTree = "<group>"; };
+		F26D86D92737C7BA00232770 /* MyAroundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAroundVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,77 @@
 		F26CB86F2732CCA7002482DE /* Carrot_Market_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				F26CB8702732CCA7002482DE /* AppDelegate.swift */,
-				F26CB8722732CCA7002482DE /* SceneDelegate.swift */,
-				F26CB8742732CCA7002482DE /* ViewController.swift */,
-				F26CB8762732CCA7002482DE /* Main.storyboard */,
-				F26CB87B2732CCA8002482DE /* LaunchScreen.storyboard */,
+				F2A1399C2737852600B31C9D /* Utils */,
+				F2A1399E2737854100B31C9D /* Delegate */,
+				F2A1399D2737853600B31C9D /* Supporting Files */,
+				F2A139A02737855100B31C9D /* Server */,
+				F2A1399F2737854900B31C9D /* Storyboards */,
+				F2A139A12737855700B31C9D /* View Controllers */,
+			);
+			path = Carrot_Market_iOS;
+			sourceTree = "<group>";
+		};
+		F2A1399C2737852600B31C9D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F2A1399D2737853600B31C9D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				F26CB8792732CCA8002482DE /* Assets.xcassets */,
 				F26CB87E2732CCA8002482DE /* Info.plist */,
 			);
-			path = Carrot_Market_iOS;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2A1399E2737854100B31C9D /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F26CB8702732CCA7002482DE /* AppDelegate.swift */,
+				F26CB8722732CCA7002482DE /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		F2A1399F2737854900B31C9D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F26CB8762732CCA7002482DE /* Main.storyboard */,
+				F26CB87B2732CCA8002482DE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F2A139A02737855100B31C9D /* Server */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		F2A139A12737855700B31C9D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2A139A2273785B900B31C9D /* Home */,
+				F26CB8742732CCA7002482DE /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F2A139A2273785B900B31C9D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F26D86CB2737C49300232770 /* HomeTBC.swift */,
+				F26D86CD2737C4B500232770 /* HomeVC.swift */,
+				F26D86D72737C7A600232770 /* TownVC.swift */,
+				F26D86D92737C7BA00232770 /* MyAroundVC.swift */,
+				F26D86D32737C56000232770 /* ChatVC.swift */,
+				F26D86D52737C57500232770 /* ProfileVC.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +212,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F26D86DA2737C7BA00232770 /* MyAroundVC.swift in Sources */,
+				F26D86D82737C7A600232770 /* TownVC.swift in Sources */,
+				F26D86D42737C56000232770 /* ChatVC.swift in Sources */,
 				F26CB8752732CCA7002482DE /* ViewController.swift in Sources */,
+				F26D86CE2737C4B500232770 /* HomeVC.swift in Sources */,
 				F26CB8712732CCA7002482DE /* AppDelegate.swift in Sources */,
+				F26D86CC2737C49300232770 /* HomeTBC.swift in Sources */,
+				F26D86D62737C57500232770 /* ProfileVC.swift in Sources */,
 				F26CB8732732CCA7002482DE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +371,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5JQQ946A44;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Carrot_Market_iOS/Info.plist;
+				INFOPLIST_FILE = "Carrot_Market_iOS/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +399,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5JQQ946A44;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Carrot_Market_iOS/Info.plist;
+				INFOPLIST_FILE = "Carrot_Market_iOS/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

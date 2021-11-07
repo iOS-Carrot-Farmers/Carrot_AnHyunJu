@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CBk-E7-qAO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeTBC-->
+        <scene sceneID="jEV-le-pGk">
+            <objects>
+                <tabBarController storyboardIdentifier="HomeTBC" id="CBk-E7-qAO" customClass="HomeTBC" customModule="Carrot_Market_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tbf-R1-JhM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ndg-bG-YSc" kind="relationship" relationship="viewControllers" id="LGo-L4-BOn"/>
+                        <segue destination="XBq-vc-1gr" kind="relationship" relationship="viewControllers" id="EaU-yV-ODX"/>
+                        <segue destination="szy-NT-pbD" kind="relationship" relationship="viewControllers" id="ILx-XD-HB5"/>
+                        <segue destination="vYv-Qh-xXu" kind="relationship" relationship="viewControllers" id="nKP-RT-CV0"/>
+                        <segue destination="RTg-yJ-fSW" kind="relationship" relationship="viewControllers" id="Vg0-5A-H4Y"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FXg-2R-1Zx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2600" y="-879"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="fOd-aB-p6l">
+            <objects>
+                <viewController storyboardIdentifier="TownVC" id="XBq-vc-1gr" customClass="TownVC" customModule="Carrot_Market_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="srF-q3-DDd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vhC-d4-DfT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="9xI-qr-fWd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bKH-w5-VFn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="-46"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="BSp-wX-8QZ">
+            <objects>
+                <viewController storyboardIdentifier="MyAroundVC" id="szy-NT-pbD" customClass="MyAroundVC" customModule="Carrot_Market_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EzP-HP-Ca2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fu7-9p-6dG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Oul-9G-5yJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Egh-qO-WVJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2532" y="-46"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="WcX-mu-6YD">
+            <objects>
+                <viewController storyboardIdentifier="ChatVC" id="vYv-Qh-xXu" customClass="ChatVC" customModule="Carrot_Market_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="35O-cg-Afl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="J73-aH-CbC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="A45-00-jGC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B11-iq-Qd4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3338" y="-46"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Nga-Vk-NRv">
+            <objects>
+                <viewController storyboardIdentifier="ProfileVC" id="RTg-yJ-fSW" customClass="ProfileVC" customModule="Carrot_Market_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GLL-gn-e4b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="m6G-Ll-gIZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="f1g-a5-g1u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Myr-Os-6f1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4103" y="-46"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="HnE-3X-prR">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="ndg-bG-YSc" customClass="HomeVC" customModule="Carrot_Market_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fBV-kH-A7N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5py-wb-OSr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="Ocp-jm-Y56"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="58H-sJ-md1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1019" y="-46"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
