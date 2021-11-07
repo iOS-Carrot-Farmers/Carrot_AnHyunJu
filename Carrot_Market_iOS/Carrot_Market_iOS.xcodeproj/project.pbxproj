@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F26C6B19273812AC007994D2 /* ItemDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C6B18273812AC007994D2 /* ItemDataModel.swift */; };
 		F26CB8712732CCA7002482DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26CB8702732CCA7002482DE /* AppDelegate.swift */; };
 		F26CB8732732CCA7002482DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26CB8722732CCA7002482DE /* SceneDelegate.swift */; };
 		F26CB8782732CCA7002482DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26CB8762732CCA7002482DE /* Main.storyboard */; };
@@ -21,9 +22,12 @@
 		F2C858832737F22900DCA361 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2C858822737F22900DCA361 /* SF-Pro-Display-Semibold.otf */; };
 		F2C858852737F23D00DCA361 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2C858842737F23D00DCA361 /* SF-Pro-Display-Bold.otf */; };
 		F2C858872737F25200DCA361 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2C858862737F25200DCA361 /* SF-Pro-Display-Regular.otf */; };
+		F2C8588E2737F8D700DCA361 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C8588C2737F8D700DCA361 /* ItemTableViewCell.swift */; };
+		F2C8588F2737F8D700DCA361 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C8588D2737F8D700DCA361 /* ItemTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F26C6B18273812AC007994D2 /* ItemDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDataModel.swift; sourceTree = "<group>"; };
 		F26CB86D2732CCA7002482DE /* Carrot_Market_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carrot_Market_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26CB8702732CCA7002482DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F26CB8722732CCA7002482DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		F2C858822737F22900DCA361 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 		F2C858842737F23D00DCA361 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		F2C858862737F25200DCA361 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		F2C8588C2737F8D700DCA361 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		F2C8588D2737F8D700DCA361 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,9 @@
 			children = (
 				F26D86CB2737C49300232770 /* HomeTBC.swift */,
 				F26D86CD2737C4B500232770 /* HomeVC.swift */,
+				F2C8588D2737F8D700DCA361 /* ItemTableViewCell.xib */,
+				F2C8588C2737F8D700DCA361 /* ItemTableViewCell.swift */,
+				F26C6B18273812AC007994D2 /* ItemDataModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -242,6 +251,7 @@
 				F26CB87D2732CCA8002482DE /* LaunchScreen.storyboard in Resources */,
 				F26CB87A2732CCA8002482DE /* Assets.xcassets in Resources */,
 				F2C858872737F25200DCA361 /* SF-Pro-Display-Regular.otf in Resources */,
+				F2C8588F2737F8D700DCA361 /* ItemTableViewCell.xib in Resources */,
 				F26CB8782732CCA7002482DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,12 +264,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F26D86DA2737C7BA00232770 /* MyAroundVC.swift in Sources */,
+				F2C8588E2737F8D700DCA361 /* ItemTableViewCell.swift in Sources */,
 				F26D86D82737C7A600232770 /* TownVC.swift in Sources */,
 				F26D86D42737C56000232770 /* ChatVC.swift in Sources */,
 				F26D86CE2737C4B500232770 /* HomeVC.swift in Sources */,
 				F26CB8712732CCA7002482DE /* AppDelegate.swift in Sources */,
 				F26D86CC2737C49300232770 /* HomeTBC.swift in Sources */,
 				F26D86D62737C57500232770 /* ProfileVC.swift in Sources */,
+				F26C6B19273812AC007994D2 /* ItemDataModel.swift in Sources */,
 				F26CB8732732CCA7002482DE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

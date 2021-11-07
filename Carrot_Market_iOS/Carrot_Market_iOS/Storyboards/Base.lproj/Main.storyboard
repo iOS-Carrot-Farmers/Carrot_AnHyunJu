@@ -189,18 +189,37 @@
                                     <constraint firstAttribute="bottom" secondItem="pJb-A2-dyu" secondAttribute="bottom" constant="7" id="xbJ-Kj-mCk"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hUR-6i-BMN">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="FwZ-Ux-kxI">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FwZ-Ux-kxI" id="SwU-wy-dzE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5py-wb-OSr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="hUR-6i-BMN" firstAttribute="leading" secondItem="5py-wb-OSr" secondAttribute="leading" id="32H-Xr-VC0"/>
+                            <constraint firstItem="5py-wb-OSr" firstAttribute="trailing" secondItem="hUR-6i-BMN" secondAttribute="trailing" id="ARx-le-83y"/>
+                            <constraint firstItem="hUR-6i-BMN" firstAttribute="top" secondItem="0Aw-Ue-dL6" secondAttribute="bottom" id="ODR-x6-EYg"/>
                             <constraint firstItem="0Aw-Ue-dL6" firstAttribute="leading" secondItem="5py-wb-OSr" secondAttribute="leading" id="ONa-fO-G6x"/>
                             <constraint firstItem="5py-wb-OSr" firstAttribute="trailing" secondItem="0Aw-Ue-dL6" secondAttribute="trailing" id="kZZ-jf-e3y"/>
+                            <constraint firstItem="5py-wb-OSr" firstAttribute="bottom" secondItem="hUR-6i-BMN" secondAttribute="bottom" id="wM3-0i-hOO"/>
                             <constraint firstItem="0Aw-Ue-dL6" firstAttribute="top" secondItem="5py-wb-OSr" secondAttribute="top" id="xmN-1C-8jx"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="Ocp-jm-Y56"/>
                     <connections>
                         <outlet property="categoryBtn" destination="pJb-A2-dyu" id="PMv-nD-crC"/>
+                        <outlet property="itemTableView" destination="hUR-6i-BMN" id="pnI-qd-163"/>
                         <outlet property="locationBtn" destination="PrU-Hw-FOH" id="7iI-zG-U4P"/>
                         <outlet property="noticeBtn" destination="2mg-bd-lH7" id="52h-Xx-jtV"/>
                         <outlet property="searchBtn" destination="PrU-Hw-FOH" id="a3L-im-5AU"/>
