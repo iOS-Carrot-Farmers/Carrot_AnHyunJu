@@ -58,6 +58,31 @@ extension HomeVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 144
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectProduct = itemDataList[indexPath.row]
+        let storyboard = UIStoryboard(name:"ItemDetail", bundle: nil)
+        
+        if let ivc = storyboard.instantiateViewController(identifier: "ItemDetailVC") as? ItemDetailVC {
+            ivc.itemDataList = selectProduct
+            self.navigationController?.pushViewController(ivc, animated: true)
+        }
+    }
+    
+//    // 스크롤에 따라 최 상단 헤더뷰 Collapsable하게
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        print("\(scrollView.contentOffset.y)")
+//        if scrollView.contentOffset.y < 0 {
+//            headerHeight?.constant = max(abs(scrollView.contentOffset.y), minHeight)
+//        }
+//        else{
+//            headerHeight?.constant = minHeight
+//        }
+////        let totalScroll = scrollView.contentSize.height - scrollView.bounds.size.height
+//        let offset = -scrollView.contentOffset.y
+//        let transparent = (offset-50)/100
+//        upperheader?.alpha = transparent
+//    }
 }
 
 extension HomeVC: UITableViewDataSource {
