@@ -28,6 +28,17 @@ class HomeVC: UIViewController {
     }
     
     // MARK: - Custom Method
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            
+            navigationController?.setNavigationBarHidden(true, animated: animated)
+        }
+
+        override func viewWillDisappear(_ animated: Bool) {
+            super.viewWillDisappear(animated)
+            navigationController?.setNavigationBarHidden(false, animated: animated)
+        }
+    
     func initItemList() {
         itemDataList.append(contentsOf: [
             ItemData(itemIconName: "sweetpotato", itemName: "고구마호박 아닌 호박고구마", info: "명일동 ・ 끌올 53초 전", price: "3,000원", like: 2),
@@ -69,20 +80,6 @@ extension HomeVC: UITableViewDelegate {
         }
     }
     
-//    // 스크롤에 따라 최 상단 헤더뷰 Collapsable하게
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        print("\(scrollView.contentOffset.y)")
-//        if scrollView.contentOffset.y < 0 {
-//            headerHeight?.constant = max(abs(scrollView.contentOffset.y), minHeight)
-//        }
-//        else{
-//            headerHeight?.constant = minHeight
-//        }
-////        let totalScroll = scrollView.contentSize.height - scrollView.bounds.size.height
-//        let offset = -scrollView.contentOffset.y
-//        let transparent = (offset-50)/100
-//        upperheader?.alpha = transparent
-//    }
 }
 
 extension HomeVC: UITableViewDataSource {
@@ -94,6 +91,7 @@ extension HomeVC: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ItemTableViewCell.identifier) as? ItemTableViewCell else {return UITableViewCell()}
         
         cell.setData(like: indexPath.row, appData: itemDataList[indexPath.row])
+        cell.selectionStyle = .none // 셀 선택시 회색 없애기
         return cell
     }
 }

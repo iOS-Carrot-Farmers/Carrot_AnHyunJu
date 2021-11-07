@@ -10,6 +10,9 @@
 		F26C6B19273812AC007994D2 /* ItemDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C6B18273812AC007994D2 /* ItemDataModel.swift */; };
 		F26C6B2027382FA9007994D2 /* ItemDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26C6B1F27382FA9007994D2 /* ItemDetail.storyboard */; };
 		F26C6B2327383EA0007994D2 /* ItemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C6B2227383EA0007994D2 /* ItemDetailVC.swift */; };
+		F26C6B2A27385CE2007994D2 /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C6B2827385CE2007994D2 /* RecommendCollectionViewCell.swift */; };
+		F26C6B2B27385CE2007994D2 /* RecommendCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26C6B2927385CE2007994D2 /* RecommendCollectionViewCell.xib */; };
+		F26C6B2D27385F57007994D2 /* RecommendItemDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C6B2C27385F57007994D2 /* RecommendItemDataModel.swift */; };
 		F26CB8712732CCA7002482DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26CB8702732CCA7002482DE /* AppDelegate.swift */; };
 		F26CB8732732CCA7002482DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26CB8722732CCA7002482DE /* SceneDelegate.swift */; };
 		F26CB8782732CCA7002482DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26CB8762732CCA7002482DE /* Main.storyboard */; };
@@ -32,6 +35,9 @@
 		F26C6B18273812AC007994D2 /* ItemDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDataModel.swift; sourceTree = "<group>"; };
 		F26C6B1F27382FA9007994D2 /* ItemDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ItemDetail.storyboard; sourceTree = "<group>"; };
 		F26C6B2227383EA0007994D2 /* ItemDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailVC.swift; sourceTree = "<group>"; };
+		F26C6B2827385CE2007994D2 /* RecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewCell.swift; sourceTree = "<group>"; };
+		F26C6B2927385CE2007994D2 /* RecommendCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCollectionViewCell.xib; sourceTree = "<group>"; };
+		F26C6B2C27385F57007994D2 /* RecommendItemDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendItemDataModel.swift; sourceTree = "<group>"; };
 		F26CB86D2732CCA7002482DE /* Carrot_Market_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carrot_Market_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26CB8702732CCA7002482DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F26CB8722732CCA7002482DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				F26C6B2227383EA0007994D2 /* ItemDetailVC.swift */,
+				F26C6B2927385CE2007994D2 /* RecommendCollectionViewCell.xib */,
+				F26C6B2827385CE2007994D2 /* RecommendCollectionViewCell.swift */,
+				F26C6B2C27385F57007994D2 /* RecommendItemDataModel.swift */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -264,6 +273,7 @@
 				F2C858852737F23D00DCA361 /* SF-Pro-Display-Bold.otf in Resources */,
 				F26CB87D2732CCA8002482DE /* LaunchScreen.storyboard in Resources */,
 				F26CB87A2732CCA8002482DE /* Assets.xcassets in Resources */,
+				F26C6B2B27385CE2007994D2 /* RecommendCollectionViewCell.xib in Resources */,
 				F2C858872737F25200DCA361 /* SF-Pro-Display-Regular.otf in Resources */,
 				F2C8588F2737F8D700DCA361 /* ItemTableViewCell.xib in Resources */,
 				F26C6B2027382FA9007994D2 /* ItemDetail.storyboard in Resources */,
@@ -289,6 +299,8 @@
 				F26C6B19273812AC007994D2 /* ItemDataModel.swift in Sources */,
 				F26C6B2327383EA0007994D2 /* ItemDetailVC.swift in Sources */,
 				F26CB8732732CCA7002482DE /* SceneDelegate.swift in Sources */,
+				F26C6B2A27385CE2007994D2 /* RecommendCollectionViewCell.swift in Sources */,
+				F26C6B2D27385F57007994D2 /* RecommendItemDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
