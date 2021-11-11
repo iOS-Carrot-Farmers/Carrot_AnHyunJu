@@ -25,25 +25,11 @@ class HomeTBC: UITabBarController {
               let profileVC = self.storyboard?.instantiateViewController(identifier: "ProfileVC")
             else { return }
         
-        homeVC.tabBarItem.title = "홈"
-        homeVC.tabBarItem.image = UIImage(named: "homeIcon")
-        homeVC.tabBarItem.selectedImage = UIImage(named: "homeIconFill")
-        
-        townVC.tabBarItem.title = "동네생활"
-        townVC.tabBarItem.image = UIImage(named: "townIcon")
-        townVC.tabBarItem.selectedImage = UIImage(named: "townIconFill")
-        
-        myaroundVC.tabBarItem.title = "내 근처"
-        myaroundVC.tabBarItem.image = UIImage(named: "myAroundIcon")
-        myaroundVC.tabBarItem.selectedImage = UIImage(named: "myAroundIconFill")
-        
-        chatVC.tabBarItem.title = "채팅"
-        chatVC.tabBarItem.image = UIImage(named: "chatIcon")
-        chatVC.tabBarItem.selectedImage = UIImage(named: "chatIconFill")
-        
-        profileVC.tabBarItem.title = "나의 당근"
-        profileVC.tabBarItem.image = UIImage(named: "myCarrotIcon")
-        profileVC.tabBarItem.selectedImage = UIImage(named: "myCarrotIconFill")
+        homeVC.tabBarItem = UITabBarItem(title: "홈", image: UIImage(named: "homeIcon"), selectedImage: UIImage(named: "homeIconFill"))
+        townVC.tabBarItem = UITabBarItem(title: "동네생활", image: UIImage(named: "townIcon"), selectedImage: UIImage(named: "townIconFill"))
+        myaroundVC.tabBarItem = UITabBarItem(title: "내 근처", image: UIImage(named: "myAroundIcon"), selectedImage: UIImage(named: "myAroundIconFill"))
+        chatVC.tabBarItem = UITabBarItem(title: "채팅", image: UIImage(named: "chatIcon"), selectedImage: UIImage(named: "chatIconFill"))
+        profileVC.tabBarItem = UITabBarItem(title: "나의 당근", image: UIImage(named: "myCarrotIcon"), selectedImage: UIImage(named: "myCarrotIconFill"))
         
         setViewControllers([homeVC, townVC, myaroundVC, chatVC, profileVC], animated: true)
         
