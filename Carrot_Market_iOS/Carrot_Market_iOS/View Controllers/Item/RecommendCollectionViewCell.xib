@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RecommendCollectionViewCell" customModule="Carrot_Market_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="182" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="182" height="170"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eunjuchoi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzw-NR-1NC">
+                        <rect key="frame" x="8" y="121" width="45" height="13"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999,999+원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBH-cy-CVn">
+                        <rect key="frame" x="8" y="141" width="61" height="13"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eunjuchoi" translatesAutoresizingMaskIntoConstraints="NO" id="uPO-9b-GSi">
+                        <rect key="frame" x="8" y="7" width="167" height="107"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="167" id="R6T-Zq-HkH"/>
+                            <constraint firstAttribute="height" constant="107" id="dUd-X6-I7d"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="DBH-cy-CVn" firstAttribute="leading" secondItem="yzw-NR-1NC" secondAttribute="leading" id="4rw-WO-czI"/>
+                <constraint firstItem="uPO-9b-GSi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="7" id="AYx-ri-yOO"/>
+                <constraint firstItem="yzw-NR-1NC" firstAttribute="leading" secondItem="uPO-9b-GSi" secondAttribute="leading" id="Jc7-zZ-EQF"/>
+                <constraint firstItem="yzw-NR-1NC" firstAttribute="top" secondItem="uPO-9b-GSi" secondAttribute="bottom" constant="7" id="LIo-G4-4Om"/>
+                <constraint firstItem="uPO-9b-GSi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="f0R-Ea-H9i"/>
+                <constraint firstItem="DBH-cy-CVn" firstAttribute="top" secondItem="yzw-NR-1NC" secondAttribute="bottom" constant="7" id="rjv-TQ-5ax"/>
+                <constraint firstAttribute="trailing" secondItem="uPO-9b-GSi" secondAttribute="trailing" constant="7" id="vQw-fL-tXW"/>
+            </constraints>
+            <connections>
+                <outlet property="recommendImageView" destination="uPO-9b-GSi" id="AkD-Qs-xgo"/>
+                <outlet property="recommendItemLabel" destination="yzw-NR-1NC" id="tvD-wj-UFK"/>
+                <outlet property="recommendPriceLabel" destination="DBH-cy-CVn" id="3FC-WF-U29"/>
+            </connections>
+            <point key="canvasLocation" x="130.43478260869566" y="90.401785714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="eunjuchoi" width="1000" height="662"/>
+    </resources>
+</document>
